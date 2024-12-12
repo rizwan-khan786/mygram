@@ -2,6 +2,7 @@
 
 import 'package:get/get.dart';
 import 'package:mygram/View/LoginScreen.dart';
+import 'package:mygram/View/OnBoarding/Onboarding.dart';
 
 class Splashcontroller extends GetxController{
 
@@ -10,8 +11,8 @@ class Splashcontroller extends GetxController{
     // TODO: implement onInit
     super.onInit();
 
-   Future.delayed(const Duration(seconds: 3), () {
-      Get.offAll(const Loginscreen()); 
+   Future.delayed(const Duration(seconds: 2), () {
+      Get.offAll( OnBoardingScreen()); 
     });
   }
 }
